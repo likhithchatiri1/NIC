@@ -15,14 +15,15 @@ else:
     print('command : failed')
 
 def Update_Version():
+    Version_Number = '1.2'
+
     with open('version.txt', 'r') as file:
         filedata = file.read()
 
-    update = filedata[filedata.find(":")+1:filedata.find("'")]
-    filedata = filedata.replace(update,'1.2')
+    Update = filedata[filedata.find(":")+1:filedata.find("'")]
+    filedata = filedata.replace(Update,Version_Number)
 
     with open('version.txt', 'w') as file:
         file.write(filedata)
-
 
 Update_Version()

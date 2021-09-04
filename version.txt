@@ -1,1 +1,1 @@
-Build Version = "Version:1.1"
+Build Version = "Version:1.2"
